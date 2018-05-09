@@ -45,6 +45,7 @@ groupby() 函数扫描整个序列并且查找连续相同值（或者根据指�
 那么你最好使用 defaultdict() 来构建一个多值字典，关于多值字典已经在 1.6 小节有过详细的介绍。比如：
 
 '''
+# 这个才是开发中常遇到的情况
 from collections import defaultdict
 rows_by_date = defaultdict(list)
 for row in rows:
