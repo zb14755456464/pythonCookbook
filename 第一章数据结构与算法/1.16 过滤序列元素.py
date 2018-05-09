@@ -45,3 +45,6 @@ more5 = [n > 5 for n in counts] # [False, False, True, False, False, True, True,
 
 # 现在你想将那些对应 count 值大于5的地址全部输出，那么你可以这样做：
 res = list(compress(addresses,more5))
+
+# 这里的关键点在于先创建一个 Boolean 序列，指示哪些元素符合条件。
+# 然后 compress() 函数根据这个序列去选择输出对应位置为 True 的元素。
